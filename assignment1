@@ -1,0 +1,6 @@
+list=[1,3,5,7,9]
+n=int(input('n='))
+if n in list:
+    print('element is in the list')
+else:
+    print('element is not in the list')
