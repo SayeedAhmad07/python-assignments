@@ -1,0 +1,5 @@
+credit=int(input('Enter the amount to be credited:'))
+balance=10000
+Total_balance=credit+balance
+print('credited amount:',credit)
+print('Main balance:',Total_balance)
