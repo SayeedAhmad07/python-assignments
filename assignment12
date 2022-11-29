@@ -1,0 +1,12 @@
+Sno=int(input('S.no='))
+Sname=input('name=')
+Sgroup=input('Group=')
+s1=int(input('Enter Maths marks:'))
+s2=int(input('Enter Science marks:'))
+s3=int(input('Enter Social marks:'))
+if s1>35:
+    if s2>35:
+        if s3>35:
+            print('The Student had passed')
+else:
+    print('The Student had failed')
