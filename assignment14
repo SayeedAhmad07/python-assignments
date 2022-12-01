@@ -1,0 +1,56 @@
+milk=150
+bread=500
+rice=300
+meat=1000
+oil=600
+cphno=int(input('phone number:'))
+cname=input('name:')
+caddress=input('Address:')
+milkq=int(input('No of milk packets you want:'))
+breadq=int(input('No of breads you want:'))
+riceq=int(input('No of kg of rice you want:'))
+meatq=int(input('No of kg of meat you want:'))
+oilq=int(input('No of oil packets you want:'))
+bill=(milk*milkq)+(bread*breadq)+(rice*riceq)+(meat*meatq)+(oil*oilq)
+if bill>3000:
+    tax=bill*15/100
+elif bill>2000:
+    tax=bill*10/100
+elif bill>1000:
+    tax=bill*7/100
+elif bill>500:
+    tax=bill*5/100
+else:
+    tax=0
+bill=tax+bill
+coupon1=('DIWALI')
+coupon2=('CHRISTMAS')
+coupon=input('Enter your coupon code:')
+if coupon==coupon1:
+    if bill>3000:
+        bill=(bill-((10/100)(bill)))
+        print('Total bill:',bill)
+    elif bill>2000:
+        bill=(bill-((6/100)(bill)))
+        print('Total bill:',bill)
+    elif bill>1000:
+        bill=(bill-((4/100)(bill)))
+        print('Total bill:',bill)
+    else:
+        print('Total bill:',bill)
+if coupon==coupon2:
+    if bill>3000:
+        bill=(bill-((20/100)(bill)))
+        print('Total bill:',bill)
+    elif bill>2000:
+        bill=(bill-((10/100)(bill)))
+        print('Total bill:',bill)
+    elif bill>1000:
+         bill=(bill-((5/100)(bill)))
+         print('Total bill:',bill)
+    else:
+        print('TOtal bill:',bill)
+print('Customer phone number:',cphno)
+print('Customer name:',cname)
+print('Customer address:',caddress)
+print('TOtal bill amount :',bill)
