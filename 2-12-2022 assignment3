@@ -1,0 +1,27 @@
+def leapyear(n):
+    if n%4==0 and (n%100!=0 or n%400==0):
+        print('Leap Year')
+    else:
+        print('Non-leap Year')
+n=int(input('n='))
+leapyear(n)
+
+def leapyear(n):
+    if n%4==0 and (n%100!=0 or n%400==0):
+        return 'Leap Year'
+    else:
+        return 'Non-leap Year'
+n=int(input('n='))
+print(leapyear(n))
+
+
+def leapyear(n):
+    if n%4==0 and (n%100!=0 or n%400==0):
+        return 'Leap Year'
+    else:
+        return 'Non-leap Year'
+n=int(input('n='))
+if leapyear(n):
+    print(n,'is a leap year')
+else:
+    print(n,'is a non-leap year')
