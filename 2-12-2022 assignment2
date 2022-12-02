@@ -1,0 +1,26 @@
+def vote(n):
+    if n>18:
+        print('ELigible to vote')
+    else:
+        print('Not eligible to vote')
+n=int(input('n='))
+vote(n)
+
+def vote(n):
+    if n>18:
+        return 'eligible'
+    else:
+        return 'ineligible'
+n=int(input('n='))
+print(vote(n))
+
+def vote(n):
+    if n>18:
+        return 'eligible'
+    else:
+        return 'ineligible'
+n=int(input('n='))
+if vote(n):
+    print('Eligible to vote')
+else:
+    print('Ineligible to vote')
