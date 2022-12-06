@@ -1,0 +1,7 @@
+n=int(input('n='))
+revs_number=0
+while n>0:
+    r=n%10
+    revs_number=(revs_number*10)+r
+    n=n//10
+print(revs_number)
