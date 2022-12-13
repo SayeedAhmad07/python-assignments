@@ -1,0 +1,8 @@
+l=[]
+n=int(input('n='))
+for i in range(n):
+    x=int(input('Enter value:'))
+    l.append(x)
+    s=set(l)
+    a=list(s)
+print(a)
