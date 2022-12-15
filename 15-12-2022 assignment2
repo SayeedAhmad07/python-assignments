@@ -1,0 +1,15 @@
+n=int(input('n='))
+l=[]
+m=[]
+for i in range(n):
+    x=int(input('enter a number:'))
+    if x%2==0:
+        l.append(x)
+        l.sort()
+    else:
+        m.append(x)
+        m.sort()
+print('even no:',l)
+print('odd no:',m)
+c=m+l
+print(c)
