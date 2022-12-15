@@ -1,0 +1,15 @@
+n=int(input('n='))
+l=[]
+m=[]
+for i in range(n):
+    x=int(input('enter a number:'))
+    if x<0:
+        l.append(x)
+        l.sort()
+    else:
+        m.append(x)
+        m.sort()
+print('negative no:',l)
+print('positive no:',m)
+c=l+m
+print(c)
