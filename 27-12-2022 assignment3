@@ -1,0 +1,16 @@
+n=int(input('enter no of numbers:'))
+l=list(map(int,input('enter numbers:').split()))
+x=int(input('enter number to search:'))
+first=0
+last=n-1
+while first<=last:
+    mid=(first+last)//2
+    if l[mid]==x:
+        print('element is found at',mid)
+        break
+    elif l[mid]<x:
+        first=mid+1
+    elif l[mid]>x:
+        last=mid-1
+if first>last:
+    print('not found')
