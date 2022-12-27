@@ -1,0 +1,6 @@
+l=list(map(int,input('Enter numbers:').split()))
+x=int(input('Enter a value:'))
+if x in l:
+    print('Element found at',l.index(x))
+else:
+    print('Element not found')
