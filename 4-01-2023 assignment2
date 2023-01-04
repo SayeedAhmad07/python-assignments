@@ -1,0 +1,21 @@
+n=int(input('Enter dimensions:'))
+matrix=[]
+s=[]
+for i in range(n):
+    l=[]
+    for j in range(n):
+        x=int(input('Enter a value:'))
+        l.append(x)
+    matrix.append(l)
+l1=[]
+l2=[]
+for i in range(n):
+    for j in range(n):
+        if i==j :
+            l1.append(matrix[i][j])
+        if i+j==n-1:
+            l2.append(matrix[i][j])
+if max(l1)>max(l2):
+    print(max(l1))
+if max(l1)<max(l2):
+    print(max(l2))
